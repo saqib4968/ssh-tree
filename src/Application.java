@@ -1,5 +1,3 @@
-import java.util.Stack;
-
 public class Application {
 
     public static void main(String [] args){
@@ -18,9 +16,25 @@ public class Application {
         two.setRight(six);
 
         System.out.print("Pre-order with recursion... ");
-        Utility.preOrderTraversalRecursion(root);
+        TraversalUtility.preOrderTraversalRecursion(root);
         System.out.println();
         System.out.print("Pre-order without recursion... ");
-        Utility.preOrderTraversalNoRecursion(root);
+        TraversalUtility.preOrderTraversalNoRecursion(root);
+
+        System.out.println();
+
+        System.out.print("In-order with recursion... ");
+        TraversalUtility.inOrderTraversalRecursion(root);
+        System.out.println();
+        System.out.print("In-order without recursion... ");
+        TraversalUtility.inOrderTraversalNoRecursion(root);
+
+        System.out.println();
+
+        System.out.print("Post-order with recursion... ");
+        TraversalUtility.postOrderTraversalRecursion(root);
+        System.out.println();
+        System.out.print("Post-order without recursion... ");
+        TraversalUtility.postOrderTraversalNoRecursion(root);
     }
 }
