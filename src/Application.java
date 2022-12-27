@@ -17,8 +17,10 @@ public class Application {
         two.setLeft(five);
         two.setRight(six);
 
+        System.out.print("Pre-order with recursion... ");
         Utility.preOrderTraversalRecursion(root);
         System.out.println();
+        System.out.print("Pre-order without recursion... ");
         Utility.preOrderTraversalNoRecursion(root);
     }
 }
